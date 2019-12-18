@@ -7,7 +7,7 @@
   <meta name="description" content="New Zealand Photos"/>
   <meta name="keywords" content="photos, pictures, new zealand">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="icon" href="images\camera.png" sizes="any" type="image\png">
 </head>
 <body>
@@ -16,7 +16,7 @@
 	    <h3>New Zealand Pics</h3>
     </header> 
 
-    <section id="sidebarLeft">
+    <section id="sidebarLeft" class="float-left">
       <ul>
     	  <li><a class="active" href="">Home</a></li>
     	  <li><a href="src/albums.html">Albums</a></li>
@@ -26,9 +26,9 @@
     	</ul>
     </section>
     
-    <section id="sidebarRight">
+    <section id="sidebarRight" class="float-right">
     	<div id="sideBlock">
-    		<table style="width: 100%; height: 100%">
+    		<table>
     		  <tr>
       			<th style="height: 20%">
       				<h3>Cities</h3>
@@ -83,7 +83,7 @@
     		</div>
     		
     		<div id="photoBox">
-    			<div style="padding-bottom:1em;">
+    			<div style="padding-bottom: 1em;">
     				<p>Wellington, Mount Victoria</p>
     				<h5>Vitor Antunes Cazella</h5>
     			</div>
@@ -124,5 +124,10 @@
         </div>
     	</div>
 	</footer>
+<script>
+	//
+	var car = "Fiat";
+	document.getElementById("demo").innerHTML = car;
+</script>
 </body>
 </html>
