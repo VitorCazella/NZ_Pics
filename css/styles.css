@@ -28,6 +28,14 @@ footer{
 	border-top: double;
 }
 
+#policy {
+	padding: 2em;
+}
+
+#policy h1, h2, h3{
+	padding: 0 0 0.6em 0.2em ;
+}
+
  #privacy a{
 	float: right;
 	padding-right: 4em; 
