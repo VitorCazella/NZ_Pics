@@ -28,6 +28,12 @@ footer{
 	border-top: double;
 }
 
+ #privacy a{
+	float: right;
+	padding-right: 4em; 
+	color: black;
+}
+
 #sidebarLeft{
     padding: 18em 4em;
     float: left;
@@ -65,7 +71,7 @@ footer{
 }
 
 #sidebarRight{
-	padding: 12em 2em;
+	padding: 12em 4em;
 	float: right;
 }
 
@@ -81,29 +87,34 @@ footer{
 }
 
 #sideBlock{
+	width: 20em;
 	height: 30em;
 	border: outset 5px;
+	margin: auto;
 }
 
 #main{
-	padding: 4em 21em;
+	padding-top: 4em;
+	padding-bottom: 8em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 20em;
+	margin-right: 28em;
 }
 
 #main h1{
-	text-align: left;
 	font-size: 3em;
 	margin: 0.4em;
 }
 
 #photoBox{
-	text-align: left;
 	display: block;
-	max-width: 600px;
 	margin-bottom: 4em;
+	margin-left: 14em;
+	margin-right: 14em;
 	padding: 2em;
 	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	overflow: hidden;
 }
 
 #photoBox a{
@@ -131,7 +142,6 @@ footer{
 	border-radius: 4px;
 	box-shadow: 10px 10px 20px grey, 10px 15px 20px grey;
 	background-color: #f0f0f0;
-	overflow: hidden;
 }
 
 #bigBox table, tr, th, td{
@@ -182,14 +192,9 @@ footer{
 	background-color: white;
 }
 
-.imgShadow img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 12px;
-	max-width: 600px;
-	height: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+.center {
+  margin: auto;
+  padding: 10px;
 }
 
 .fixed{
@@ -225,6 +230,7 @@ footer{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
 
 .zoom {

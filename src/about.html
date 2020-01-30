@@ -41,10 +41,14 @@ building a static website. Need to apply the principles and skills you have lear
 				<img src="..\images\whitecliffe.jpg" alt="Whitecliffe Logo" style="float: right; width: 200px; margin-right: 2em;">
 			</div>
 			<br><br><br><br><br><br><br><br>
-			<form action="thankyou.html" method="post">
+			<form name="myForm" action="thankyou.html" method="post" onsubmit="return vaidetForm()" required>
 				<h3>Send your feedback here:</h3><br>
+				<p>Name: <input type="text" name="fname"></p><br>
+				<p>Email: <input type="text"></p><br>
+				<p><input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female</p><br>
 				<textarea name="feedback" style="width:800px; height:200px;"></textarea><br>
-				<button type="submit" style="width: 70px; height: 40px;">Submit</button>
+				<input type="submit" value="Submit" style="width: 70px; height: 40px;">
 			</form>
 		</div>
 	</div>
@@ -53,11 +57,19 @@ building a static website. Need to apply the principles and skills you have lear
     <div style="padding-top:20px; height:100px;">
 		<p>Vitor Antunes Cazella</p>
 		<p>@NewZealandPics</p>
-		<div style="float: right;">
-			<p>Privacy Policy</p>
-			<p>Terms of Use</p>
-		</div>
-	</div>
+			<div id="privacy">
+				<a href="privacypolicy.html">Privacy Policy</a>
+			</div>
+		</div>	
   </footer>
 </body>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 </html>
